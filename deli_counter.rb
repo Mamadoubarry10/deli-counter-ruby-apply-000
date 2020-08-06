@@ -14,10 +14,19 @@ def line(myArray)
   end
 end
 
-def take_a_number(x, name)
-  x << name
-  puts "Welcome, #{name}. You are number #{x.size} in line."
+# def take_a_number(x, name)
+#   x << name
+#   puts "Welcome, #{name}. You are number #{x.size} in line."
+# end
+
+counter = 0
+def take_a_number(line)
+  
+  counter +=1
+  line << counter
+  puts "welcome you are number #{counter}"
 end
+
 
 def now_serving(myArray)
   if myArray.empty?
